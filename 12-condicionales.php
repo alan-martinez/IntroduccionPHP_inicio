@@ -32,4 +32,28 @@ if (empty($cliente)){
     }
 }
 
+//else if
+if ($cliente['saldo'] < 0){
+    echo 'El cliente tiene saldo';
+}else if($cliente['pedidos']['pedido1'] === 'Arroz'){
+    echo 'El cliente tiene pedido de arroz';
+}else{
+    echo 'El cliente esta incompleto';
+}
+
+echo '<br>';
+//switch
+$tecnologia = 'C++';
+switch($tecnologia){
+    case 'PHP':
+        echo 'PHP';
+        break;
+    case 'C++':
+        echo 'C++';
+        break;
+    default:
+        echo 'No se que tecnologia es';
+        break;
+}
+
 include 'includes/footer.php';
